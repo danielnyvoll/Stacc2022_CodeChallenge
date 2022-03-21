@@ -25,5 +25,6 @@
         {/each}
     {/each}
     </div>
+    
     <hr style="height:6px;border-width:0;color:black;background-color:black">
 </main>

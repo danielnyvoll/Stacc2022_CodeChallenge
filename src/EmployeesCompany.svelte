@@ -10,7 +10,7 @@
 	});
 
     async function searchCompany() {
-        const res = await fetch(`https://data.brreg.no/enhetsregisteret/api/enheter`);//Finner alle bedrifter
+        const res = await fetch(`https://data.brreg.no/enhetsregisteret/api/enheter?&organisasjonsform=AS`);//Finner alle bedrifter
 		const data = await res.json();
         console.log(data);
         for(let i =0; i < data._embedded.enheter.length; i++) {
@@ -18,16 +18,17 @@
         }
         console.log(companyNumber);
         console.log(companyNumber.length);
-        for(let j=0; j<3; j++) {
+        for(let j=0; j<companyNumber.length; j++) {
             let nummer = companyNumber[j];
             console.log(nummer);
-            const res = await fetch(`https://data.brreg.no/enhetsregisteret/api/enheter/${nummer}/roller?fraAntallAnsatte=2`);//Finner roller i bedriftene
+            const res = await fetch(`https://data.brreg.no/enhetsregisteret/api/enheter/${nummer}/roller?fraAntallAnsatte=1`);//Finner roller i bedriftene
 		    const data = await res.json();
             console.log(data.rollegrupper);
 
 //Går igjennom alle rollene og finner navn og etternavn som legges til i map med: key = org.nummer og value= fornavn + etternavn
             for(let k=0; k<data.rollegrupper.length; k++) {
                 console.log(data);
+                if(data.rollegrupper[k].person.navn)
                 map.set(nummer, data.rollegrupper[k].roller[k].person.navn.fornavn + " " + data.rollegrupper[k].roller[k].person.navn.etternavn);
             }
         }
