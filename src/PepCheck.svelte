@@ -16,8 +16,8 @@
 
 <main>
     <div>
-        <h3>Pep-Check</h3>
-        <p>Search for a person. Example: Knut Arild Hareide</p>
+        <h3>Pep-Søk</h3>
+        <p>Søk etter person. Eksempel: Knut Arild Hareide</p>
     <input type="search" name="name" bind:value={name} placeholder="Søk etter person..">
     <button id="search" on:click={getName}>Søk</button>
     {#if hits > 0}
