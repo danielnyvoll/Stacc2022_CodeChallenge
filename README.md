@@ -48,7 +48,7 @@ Appen kan finnes på:
 
 Noen spesielle valg du ønsker å beskrive/forsvare?
 
-Laget ikke et eget API fordi jeg synes API'ene som var utdelt var gode nok.
+Laget ikke et eget API fordi jeg synes API'ene som var utdelt var gode nok. Vet også at sjekken jeg har laget for å finne en person i en bedrift etter ett pep-søk burde vært gjort i backend og ikke i frontend. Hvertfall når det er snakk om sinnsyke mengder data som her(10 000). Men synes det var utfordrende og gøy. Som med alle prosjekt skulle jeg ønske det var litt mere tid siden det var så mye jeg hadde lyst til å få til. Oppgaven var morsom og jeg lærte mye om api så takk :D
 
 Eventuellt andre kommentarer / utfordringer?
 
