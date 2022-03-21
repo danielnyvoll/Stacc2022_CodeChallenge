@@ -1,6 +1,6 @@
 <script>
 	import PepCheck from "./PepCheck.svelte";
-	import Employees from "./EmployeesCompany.svelte";
+	import Employees from "./Employees.svelte";
 	import Company from "./Company.svelte";
 	import EmployeesCompany from "./EmployeesCompany.svelte";
 	import { navn } from './store.js';

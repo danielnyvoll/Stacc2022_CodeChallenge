@@ -18,8 +18,8 @@
     <div>
         <h3>Pep-Check</h3>
         <p>Search for a person. Example: Knut Arild Hareide</p>
-    <input type="search" name="name" bind:value={name} placeholder="Search for a name..">
-    <button id="search" on:click={getName}>Search</button>
+    <input type="search" name="name" bind:value={name} placeholder="Søk etter person..">
+    <button id="search" on:click={getName}>Søk</button>
     {#if hits > 0}
         <p>{personHits} er flagget</p>
     {:else}

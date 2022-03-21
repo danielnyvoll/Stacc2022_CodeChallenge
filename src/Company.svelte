@@ -14,8 +14,8 @@
     <div>
         <h3>Søk etter en bedrift</h3>
         <p>Finn org nummer</p>
-        <input type="search" name="name" bind:value={bedrift} placeholder="Search for a company">
-        <button id="search" on:click={searchCompany}>Search</button>
+        <input type="search" name="name" bind:value={bedrift} placeholder="Søk etter bedrift">
+        <button id="search" on:click={searchCompany}>Søk</button>
         {#each companyNumber as match}
             <p>{match.navn} med org nummer: {match.organisasjonsnummer}</p>    
         {/each}
